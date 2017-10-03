@@ -50,7 +50,7 @@ strings STRING 0 800 800 3F 2
 dataBANK1 BANK1 1 B2 B2 4 1
 dataCOMMON COMMON 1 76 76 4 1
 bssCOMMON COMMON 1 7A 7A 2 1
-$C:\Users\sebas\AppData\Local\Temp\s51c.obj
+$C:\Users\sebas\AppData\Local\Temp\s4ic.obj
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 12 12 3 2
 config CONFIG 0 2007 2007 2 2
@@ -110,33 +110,33 @@ STRING 1000-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\jgatoraton1.production.obj
-15 cinit CODE >424:C:\Users\sebas\AppData\Local\Temp\s51c.
-15 cinit CODE >427:C:\Users\sebas\AppData\Local\Temp\s51c.
-15 cinit CODE >467:C:\Users\sebas\AppData\Local\Temp\s51c.
-16 cinit CODE >468:C:\Users\sebas\AppData\Local\Temp\s51c.
-17 cinit CODE >469:C:\Users\sebas\AppData\Local\Temp\s51c.
-1C cinit CODE >470:C:\Users\sebas\AppData\Local\Temp\s51c.
-1D cinit CODE >471:C:\Users\sebas\AppData\Local\Temp\s51c.
-22 cinit CODE >472:C:\Users\sebas\AppData\Local\Temp\s51c.
-23 cinit CODE >473:C:\Users\sebas\AppData\Local\Temp\s51c.
-28 cinit CODE >474:C:\Users\sebas\AppData\Local\Temp\s51c.
-29 cinit CODE >475:C:\Users\sebas\AppData\Local\Temp\s51c.
-2E cinit CODE >476:C:\Users\sebas\AppData\Local\Temp\s51c.
-2F cinit CODE >480:C:\Users\sebas\AppData\Local\Temp\s51c.
-34 cinit CODE >481:C:\Users\sebas\AppData\Local\Temp\s51c.
-35 cinit CODE >482:C:\Users\sebas\AppData\Local\Temp\s51c.
-3A cinit CODE >483:C:\Users\sebas\AppData\Local\Temp\s51c.
-3B cinit CODE >484:C:\Users\sebas\AppData\Local\Temp\s51c.
-40 cinit CODE >485:C:\Users\sebas\AppData\Local\Temp\s51c.
-41 cinit CODE >486:C:\Users\sebas\AppData\Local\Temp\s51c.
-44 cinit CODE >487:C:\Users\sebas\AppData\Local\Temp\s51c.
-45 cinit CODE >491:C:\Users\sebas\AppData\Local\Temp\s51c.
-46 cinit CODE >492:C:\Users\sebas\AppData\Local\Temp\s51c.
-47 cinit CODE >495:C:\Users\sebas\AppData\Local\Temp\s51c.
-48 cinit CODE >496:C:\Users\sebas\AppData\Local\Temp\s51c.
-49 cinit CODE >502:C:\Users\sebas\AppData\Local\Temp\s51c.
-49 cinit CODE >504:C:\Users\sebas\AppData\Local\Temp\s51c.
-4A cinit CODE >505:C:\Users\sebas\AppData\Local\Temp\s51c.
+15 cinit CODE >424:C:\Users\sebas\AppData\Local\Temp\s4ic.
+15 cinit CODE >427:C:\Users\sebas\AppData\Local\Temp\s4ic.
+15 cinit CODE >467:C:\Users\sebas\AppData\Local\Temp\s4ic.
+16 cinit CODE >468:C:\Users\sebas\AppData\Local\Temp\s4ic.
+17 cinit CODE >469:C:\Users\sebas\AppData\Local\Temp\s4ic.
+1C cinit CODE >470:C:\Users\sebas\AppData\Local\Temp\s4ic.
+1D cinit CODE >471:C:\Users\sebas\AppData\Local\Temp\s4ic.
+22 cinit CODE >472:C:\Users\sebas\AppData\Local\Temp\s4ic.
+23 cinit CODE >473:C:\Users\sebas\AppData\Local\Temp\s4ic.
+28 cinit CODE >474:C:\Users\sebas\AppData\Local\Temp\s4ic.
+29 cinit CODE >475:C:\Users\sebas\AppData\Local\Temp\s4ic.
+2E cinit CODE >476:C:\Users\sebas\AppData\Local\Temp\s4ic.
+2F cinit CODE >480:C:\Users\sebas\AppData\Local\Temp\s4ic.
+34 cinit CODE >481:C:\Users\sebas\AppData\Local\Temp\s4ic.
+35 cinit CODE >482:C:\Users\sebas\AppData\Local\Temp\s4ic.
+3A cinit CODE >483:C:\Users\sebas\AppData\Local\Temp\s4ic.
+3B cinit CODE >484:C:\Users\sebas\AppData\Local\Temp\s4ic.
+40 cinit CODE >485:C:\Users\sebas\AppData\Local\Temp\s4ic.
+41 cinit CODE >486:C:\Users\sebas\AppData\Local\Temp\s4ic.
+44 cinit CODE >487:C:\Users\sebas\AppData\Local\Temp\s4ic.
+45 cinit CODE >491:C:\Users\sebas\AppData\Local\Temp\s4ic.
+46 cinit CODE >492:C:\Users\sebas\AppData\Local\Temp\s4ic.
+47 cinit CODE >495:C:\Users\sebas\AppData\Local\Temp\s4ic.
+48 cinit CODE >496:C:\Users\sebas\AppData\Local\Temp\s4ic.
+49 cinit CODE >502:C:\Users\sebas\AppData\Local\Temp\s4ic.
+49 cinit CODE >504:C:\Users\sebas\AppData\Local\Temp\s4ic.
+4A cinit CODE >505:C:\Users\sebas\AppData\Local\Temp\s4ic.
 4 intentry CODE >21:E:\DigitalesII\jgatoraton1\jgatoraton1.c
 BDD text25 CODE >21:E:\DigitalesII\jgatoraton1\jgatoraton1.c
 BDD text25 CODE >31:E:\DigitalesII\jgatoraton1\jgatoraton1.c
@@ -524,7 +524,8 @@ __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\jgatoraton1.production.obj
 ?_log 55 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
 ?_pow 66 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\sebas\AppData\Local\Temp\s51c.obj
+_GATO B2 0 BANK1 1 dataBANK1 dist/default/production\jgatoraton1.production.obj
+___sp 0 0 STACK 2 stack C:\Users\sebas\AppData\Local\Temp\s4ic.obj
 _main 7C6 0 CODE 0 maintext dist/default/production\jgatoraton1.production.obj
 _rand 1ABA 0 CODE 0 text2 dist/default/production\jgatoraton1.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\jgatoraton1.production.obj
@@ -534,7 +535,7 @@ ___ftadd@f1 3E 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.product
 ___ftadd@f2 41 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
 pow@x 66 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
 pow@y 69 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
-start 24 0 CODE 0 init C:\Users\sebas\AppData\Local\Temp\s51c.obj
+start 24 0 CODE 0 init C:\Users\sebas\AppData\Local\Temp\s4ic.obj
 __size_of___awmod 0 0 ABS 0 - dist/default/production\jgatoraton1.production.obj
 __size_of___ftadd 0 0 ABS 0 - dist/default/production\jgatoraton1.production.obj
 __size_of___ftdiv 0 0 ABS 0 - dist/default/production\jgatoraton1.production.obj
@@ -558,12 +559,12 @@ ___awmod@sign 3A 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.produ
 ___ftge@ff1 20 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
 ___ftge@ff2 23 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
 __HdataCOMMON 0 0 ABS 0 dataCOMMON -
-intlevel0 0 0 ENTRY 0 functab C:\Users\sebas\AppData\Local\Temp\s51c.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\sebas\AppData\Local\Temp\s51c.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\sebas\AppData\Local\Temp\s51c.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\sebas\AppData\Local\Temp\s51c.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\sebas\AppData\Local\Temp\s51c.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\sebas\AppData\Local\Temp\s51c.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\sebas\AppData\Local\Temp\s4ic.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\sebas\AppData\Local\Temp\s4ic.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\sebas\AppData\Local\Temp\s4ic.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\sebas\AppData\Local\Temp\s4ic.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\sebas\AppData\Local\Temp\s4ic.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\sebas\AppData\Local\Temp\s4ic.obj
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 __end_oflog@coeff 107E 0 STRING 0 strings dist/default/production\jgatoraton1.production.obj
 ___bmul@multiplicand 20 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
@@ -598,7 +599,6 @@ __end_of___ftneg 1722 0 CODE 0 text18 dist/default/production\jgatoraton1.produc
 __end_of___ftsub 17BA 0 CODE 0 text16 dist/default/production\jgatoraton1.production.obj
 __end_of___fttol 2000 0 CODE 0 text10 dist/default/production\jgatoraton1.production.obj
 ?_eval_poly 4B 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
-_DINAMIC B2 0 BANK1 1 dataBANK1 dist/default/production\jgatoraton1.production.obj
 __LidataCOMMON 0 0 ABS 0 idataCOMMON -
 __size_of_floor 0 0 ABS 0 - dist/default/production\jgatoraton1.production.obj
 __size_of_frexp 0 0 ABS 0 - dist/default/production\jgatoraton1.production.obj
@@ -614,14 +614,13 @@ __end_of___altoft 19B0 0 CODE 0 text12 dist/default/production\jgatoraton1.produ
 __end_of___awtoft 184C 0 CODE 0 text20 dist/default/production\jgatoraton1.production.obj
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
 __pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\jgatoraton1.production.obj
-_STATIC B4 0 BANK1 1 dataBANK1 dist/default/production\jgatoraton1.production.obj
 ___fttol@exp1 39 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
 ___fttol@lval 35 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
 ___lltoft@c 28 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
 ___ftpack 1C06 0 CODE 0 text23 dist/default/production\jgatoraton1.production.obj
 ___ftpack@arg 20 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
 ___ftpack@exp 23 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\sebas\AppData\Local\Temp\s51c.obj
+___int_sp 0 0 STACK 2 stack C:\Users\sebas\AppData\Local\Temp\s4ic.obj
 __end_of___ftpack 1CE2 0 CODE 0 text23 dist/default/production\jgatoraton1.production.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
@@ -695,7 +694,7 @@ __end_of_pow 336 0 CODE 0 text4 dist/default/production\jgatoraton1.production.o
 _validar 1A34 0 CODE 0 text1 dist/default/production\jgatoraton1.production.obj
 __Lintentry 8 0 CODE 0 intentry -
 __stringtab 1000 0 STRING 0 strings dist/default/production\jgatoraton1.production.obj
-reset_vec 0 0 CODE 0 reset_vec C:\Users\sebas\AppData\Local\Temp\s51c.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\sebas\AppData\Local\Temp\s4ic.obj
 __pdataBANK1 B2 0 BANK1 1 dataBANK1 dist/default/production\jgatoraton1.production.obj
 __size_of___bmul 0 0 ABS 0 - dist/default/production\jgatoraton1.production.obj
 __size_of___ftge 0 0 ABS 0 - dist/default/production\jgatoraton1.production.obj
@@ -739,8 +738,8 @@ __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\jgatoraton1.production.obj
 _exp$647 60 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
 main@aux2 B0 0 BANK1 1 cstackBANK1 dist/default/production\jgatoraton1.production.obj
 ___lwtoft@c 28 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
-stackhi 0 0 ABS 0 - C:\Users\sebas\AppData\Local\Temp\s51c.obj
-stacklo 0 0 ABS 0 - C:\Users\sebas\AppData\Local\Temp\s51c.obj
+stackhi 0 0 ABS 0 - C:\Users\sebas\AppData\Local\Temp\s4ic.obj
+stacklo 0 0 ABS 0 - C:\Users\sebas\AppData\Local\Temp\s4ic.obj
 ?___lltoft 28 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
 __end_of_eval_poly 1DD4 0 CODE 0 text13 dist/default/production\jgatoraton1.production.obj
 ?___lwtoft 28 0 BANK0 1 cstackBANK0 dist/default/production\jgatoraton1.production.obj
@@ -822,6 +821,7 @@ __end_of_frexp 1A34 0 CODE 0 text9 dist/default/production\jgatoraton1.productio
 _PORTC 7 0 ABS 0 - dist/default/production\jgatoraton1.production.obj
 _PORTD 8 0 ABS 0 - dist/default/production\jgatoraton1.production.obj
 __end_of_ldexp 1EE4 0 CODE 0 text7 dist/default/production\jgatoraton1.production.obj
+_RATON B4 0 BANK1 1 dataBANK1 dist/default/production\jgatoraton1.production.obj
 _TRISB 86 0 ABS 0 - dist/default/production\jgatoraton1.production.obj
 _TRISC 87 0 ABS 0 - dist/default/production\jgatoraton1.production.obj
 _TRISD 88 0 ABS 0 - dist/default/production\jgatoraton1.production.obj

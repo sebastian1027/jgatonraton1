@@ -9,38 +9,38 @@
 #include <xc.h>
 #include "config.h"
 #include <stdio.h>
-#include <time.h>
-#include <stdint.h>
-#include <stdlib.h>
-#include <math.h>
+#include <time.h> //***********librerias para       //Para tratamiento y conversión entre formatos de fecha y hora.
+#include <stdint.h>//******* poder 
+#include <stdlib.h> //************ usar     //generación de números pseudo-aleatorios
+#include <math.h> //********* random        //Contiene las funciones matemáticas comunes.
 
 int x = 0;
-unsigned int STATIC = 4; //luz encendida que representa al raton
-unsigned int DINAMIC = 1;  //Luz encendidad durante un segundo que representa al gato
+unsigned int RATON = 4; //luz encendida que representa al raton
+unsigned int GATO = 1;  //Luz encendidad durante un segundo que representa al gato
 
-void interrupt isr(){
+void interrupt isr(){  //funcion de interrupcion;
 /*    
        if(INTCONbits.RBIF == 1)
         { 
-           do{}while(PORTBbits.RB7!=0);
-         if(DINAMIC!=128) //verifica que no haya desborade, es decir si llega al led MSB no pase y no genere error
-            DINAMIC = DINAMIC*2;
+           do{}while(PORTBbits.RB7!=0); 
+         if(GATO!=128) //verifica que no haya desborade, es decir si llega al led MSB no pase y no genere error
+            GATO = GATO*2;
         INTCONbits.RBIF = 0; //interrupcion
         } 
              */
-     if(INTCONbits.INTF == 1)
+     if(INTCONbits.INTF == 1) //habilita la interrupcion 
     {
-        if(DINAMIC!=1) //verifica que no haya desborade, es decir si llega al led LSB no pase y no genere error
-           DINAMIC = DINAMIC/2;    //para la izquierda
+        if(GATO!=1) //verifica que no haya desborade, es decir si llega al led LSB no pase y no genere error
+           GATO = GATO/2;    //para la izquierda
         x = 1;
-        INTCONbits.INTF = 0; //interrupcion
+        INTCONbits.INTF = 0; //pone en 0 interrupcion, para despues volver a usar otra
     }      
         
   }
 
 void validar(){ //funcion validar
-    if(STATIC==DINAMIC){ //en el momento en que los 2 leds esten en la misma posicion
-            PORTC = STATIC; //el puerto c toma el valor de "DINAMIC"
+    if(RATON==GATO){ //en el momento en que los 2 leds esten en la misma posicion
+            PORTC = RATON; //el puerto c toma el valor de "GATO"
             PORTDbits.RD0 = 1;  //enciende otro led que esta en el pin 0 del puerto D
             __delay_ms(3000);   //enciende el led por 3 segundos
             PORTDbits.RD0 = 0;  //pasados los 3 segundos apague el led
@@ -48,20 +48,20 @@ void validar(){ //funcion validar
         else if(PORTBbits.RB7 == 1)//QUIRAR DESDE AQUI
             
         {
-         do{}while(PORTBbits.RB7!=0);
-         if(DINAMIC!=128) //verifica que no haya desborade, es decir si llega al led MSB no pase y no genere error
-            DINAMIC = DINAMIC*2;
+         do{}while(PORTBbits.RB7!=0); //verifica si fue presionado el pin 7 del puerto B
+         if(GATO!=128) //verifica que no haya desborade, es decir si llega al led MSB no pase y no genere error
+            GATO = GATO*2;
          
        // INTCONbits.RBIF = 0; //interrupcion
         } //HASTA AQUI
         else 
-            PORTC = STATIC + DINAMIC;   //de no atraparlo siga con el juego
-    PORTC = STATIC + DINAMIC;
+            PORTC = RATON + GATO;   //de no atraparlo siga con el juego
+            PORTC = RATON + GATO;
         
 }
 void main(void) {
     TRISC = 0;  //puerto c como salidas
-    PORTC = 1;  
+    PORTC = 1; 
     TRISB = 0xFF;   //puerto B como entrada
     ANSEL = 0;      //desactiva entradas analogicas
     ANSELH = 0;
@@ -72,23 +72,22 @@ void main(void) {
   //  INTCONbits.RBIE = 1; 
     INTCONbits.INTE = 1;     
     
-    
     int aux;    //variables auxiliar
     int aux2=0; //variables auxiliar2
     while (1){
         do
-        {STATIC = rand()%7; //ejecuta la funcion random
-        STATIC = pow(2, STATIC); //PORTC como 2 a la potencia(random)
-        }while(STATIC == DINAMIC);
+        {RATON = rand()%7; //hace que RATON sea aleatorio 
+        RATON = pow(2, RATON); //PORTC como 2 a la potencia(random)
+        }while(RATON == GATO);
         aux = 0;
         while(aux<5){   // hace que el led que representa al raton este con una luz intermitente
             validar(); 
             __delay_ms(50);
-            aux2 = STATIC;
-            STATIC = 0;
+            aux2 = RATON;
+            RATON = 0;
             validar();
             __delay_ms(50);
-            STATIC = aux2;
+            RATON = aux2;
             aux++;
         }   
     }   

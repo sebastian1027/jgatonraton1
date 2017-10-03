@@ -21,6 +21,7 @@ __end_of_log 660 0 CODE 0
 __size_of___ftsub 0 0 ABS 0
 ___ftneg@f1 20 0 BANK0 1
 __size_of_eval_poly 0 0 ABS 0
+_GATO B2 0 BANK1 1
 ___ftadd@f2 41 0 BANK0 1
 __CFG_BOR4V$BOR40V 0 0 ABS 0
 ___ftsub@f1 4E 0 BANK0 1
@@ -57,6 +58,7 @@ _PORTC 7 0 ABS 0
 _ANSEL 188 0 ABS 0
 _PORTD 8 0 ABS 0
 __size_of_exp 0 0 ABS 0
+_RATON B4 0 BANK1 1
 wtemp0 7E 0 ABS 0
 ___ftmul@f2 31 0 BANK0 1
 ___ftdiv@f2 28 0 BANK0 1
@@ -93,7 +95,6 @@ __Heeprom_data 0 0 EEDATA 3
 __Leeprom_data 0 0 EEDATA 3
 ?___ftmul 2E 0 BANK0 1
 ___int_sp 0 0 STACK 2
-_STATIC B4 0 BANK1 1
 ___altoft C96 0 CODE 0
 ?___ftdiv 28 0 BANK0 1
 ___lltoft C26 0 CODE 0
@@ -166,7 +167,6 @@ _PORTBbits 6 0 ABS 0
 _PORTDbits 8 0 ABS 0
 __Hstrings 0 0 ABS 0
 __Lstrings 0 0 ABS 0
-_DINAMIC B2 0 BANK1 1
 __pstrings 800 0 STRING 0
 ?___altoft 3A 0 BANK0 1
 __end_of_eval_poly EEA 0 CODE 0
@@ -375,7 +375,7 @@ idataCOMMON 1706 170D CODE 1706 0
 idataBANK1 16FE 1705 CODE 16FE 0
 %locals
 dist/default/production\jgatoraton1.production.obj
-C:\Users\sebas\AppData\Local\Temp\s51c.
+C:\Users\sebas\AppData\Local\Temp\s4ic.
 424 15 0 CODE 0
 427 15 0 CODE 0
 467 15 0 CODE 0

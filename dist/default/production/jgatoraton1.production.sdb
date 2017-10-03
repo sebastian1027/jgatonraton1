@@ -121,9 +121,9 @@
 "17 E:\DigitalesII\jgatoraton1\jgatoraton1.c
 [v _x x `i  1 e 2 0 ]
 "18
-[v _STATIC STATIC `ui  1 e 2 0 ]
+[v _RATON RATON `ui  1 e 2 0 ]
 "19
-[v _DINAMIC DINAMIC `ui  1 e 2 0 ]
+[v _GATO GATO `ui  1 e 2 0 ]
 "62
 [v _main main `(v  1 e 1 0 ]
 {

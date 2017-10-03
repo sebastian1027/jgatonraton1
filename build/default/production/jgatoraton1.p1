@@ -1719,17 +1719,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 ]
 [; ;jgatoraton1.c: 17: int x = 0;
 "18
-[v _STATIC `ui ~T0 @X0 1 e ]
-[i _STATIC
+[v _RATON `ui ~T0 @X0 1 e ]
+[i _RATON
 -> -> 4 `i `ui
 ]
-[; ;jgatoraton1.c: 18: unsigned int STATIC = 4;
+[; ;jgatoraton1.c: 18: unsigned int RATON = 4;
 "19
-[v _DINAMIC `ui ~T0 @X0 1 e ]
-[i _DINAMIC
+[v _GATO `ui ~T0 @X0 1 e ]
+[i _GATO
 -> -> 1 `i `ui
 ]
-[; ;jgatoraton1.c: 19: unsigned int DINAMIC = 1;
+[; ;jgatoraton1.c: 19: unsigned int GATO = 1;
 [v $root$_isr `(v ~T0 @X0 0 e ]
 [v F1947 `(v ~T0 @X0 1 tf ]
 "21
@@ -1744,12 +1744,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;jgatoraton1.c: 32: {
 "32
 {
-[; ;jgatoraton1.c: 33: if(DINAMIC!=1)
+[; ;jgatoraton1.c: 33: if(GATO!=1)
 "33
-[e $ ! != _DINAMIC -> -> 1 `i `ui 146  ]
-[; ;jgatoraton1.c: 34: DINAMIC = DINAMIC/2;
+[e $ ! != _GATO -> -> 1 `i `ui 146  ]
+[; ;jgatoraton1.c: 34: GATO = GATO/2;
 "34
-[e = _DINAMIC / _DINAMIC -> -> 2 `i `ui ]
+[e = _GATO / _GATO -> -> 2 `i `ui ]
 [e :U 146 ]
 [; ;jgatoraton1.c: 35: x = 1;
 "35
@@ -1771,13 +1771,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;jgatoraton1.c: 41: void validar(){
 [e :U _validar ]
 [f ]
-[; ;jgatoraton1.c: 42: if(STATIC==DINAMIC){
+[; ;jgatoraton1.c: 42: if(RATON==GATO){
 "42
-[e $ ! == _STATIC _DINAMIC 148  ]
+[e $ ! == _RATON _GATO 148  ]
 {
-[; ;jgatoraton1.c: 43: PORTC = STATIC;
+[; ;jgatoraton1.c: 43: PORTC = RATON;
 "43
-[e = _PORTC -> _STATIC `uc ]
+[e = _PORTC -> _RATON `uc ]
 [; ;jgatoraton1.c: 44: PORTDbits.RD0 = 1;
 "44
 [e = . . _PORTDbits 0 0 -> -> 1 `i `uc ]
@@ -1805,12 +1805,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 }
 [e $ != -> . . _PORTBbits 0 7 `i -> 0 `i 153  ]
 [e :U 152 ]
-[; ;jgatoraton1.c: 52: if(DINAMIC!=128)
+[; ;jgatoraton1.c: 52: if(GATO!=128)
 "52
-[e $ ! != _DINAMIC -> -> 128 `i `ui 154  ]
-[; ;jgatoraton1.c: 53: DINAMIC = DINAMIC*2;
+[e $ ! != _GATO -> -> 128 `i `ui 154  ]
+[; ;jgatoraton1.c: 53: GATO = GATO*2;
 "53
-[e = _DINAMIC * _DINAMIC -> -> 2 `i `ui ]
+[e = _GATO * _GATO -> -> 2 `i `ui ]
 [e :U 154 ]
 "56
 }
@@ -1819,14 +1819,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 "57
 [e :U 150 ]
 [; ;jgatoraton1.c: 57: else
-[; ;jgatoraton1.c: 58: PORTC = STATIC + DINAMIC;
+[; ;jgatoraton1.c: 58: PORTC = RATON + GATO;
 "58
-[e = _PORTC -> + _STATIC _DINAMIC `uc ]
+[e = _PORTC -> + _RATON _GATO `uc ]
 [e :U 155 ]
 [e :U 149 ]
-[; ;jgatoraton1.c: 59: PORTC = STATIC + DINAMIC;
+[; ;jgatoraton1.c: 59: PORTC = RATON + GATO;
 "59
-[e = _PORTC -> + _STATIC _DINAMIC `uc ]
+[e = _PORTC -> + _RATON _GATO `uc ]
 [; ;jgatoraton1.c: 61: }
 "61
 [e :UE 147 ]
@@ -1879,17 +1879,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;jgatoraton1.c: 79: do
 "79
 [e :U 162 ]
-[; ;jgatoraton1.c: 80: {STATIC = rand()%7;
+[; ;jgatoraton1.c: 80: {RATON = rand()%7;
 "80
 {
-[e = _STATIC -> % ( _rand ..  -> 7 `i `ui ]
-[; ;jgatoraton1.c: 81: STATIC = pow(2, STATIC);
+[e = _RATON -> % ( _rand ..  -> 7 `i `ui ]
+[; ;jgatoraton1.c: 81: RATON = pow(2, RATON);
 "81
-[e = _STATIC -> ( _pow (2 , -> -> 2 `i `d -> _STATIC `d `ui ]
+[e = _RATON -> ( _pow (2 , -> -> 2 `i `d -> _RATON `d `ui ]
 "82
 }
-[; ;jgatoraton1.c: 82: }while(STATIC == DINAMIC);
-[e $ == _STATIC _DINAMIC 162  ]
+[; ;jgatoraton1.c: 82: }while(RATON == GATO);
+[e $ == _RATON _GATO 162  ]
 [e :U 161 ]
 [; ;jgatoraton1.c: 83: aux = 0;
 "83
@@ -1905,21 +1905,21 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;jgatoraton1.c: 86: _delay((unsigned long)((50)*(4000000/4000.0)));
 "86
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-[; ;jgatoraton1.c: 87: aux2 = STATIC;
+[; ;jgatoraton1.c: 87: aux2 = RATON;
 "87
-[e = _aux2 -> _STATIC `i ]
-[; ;jgatoraton1.c: 88: STATIC = 0;
+[e = _aux2 -> _RATON `i ]
+[; ;jgatoraton1.c: 88: RATON = 0;
 "88
-[e = _STATIC -> -> 0 `i `ui ]
+[e = _RATON -> -> 0 `i `ui ]
 [; ;jgatoraton1.c: 89: validar();
 "89
 [e ( _validar ..  ]
 [; ;jgatoraton1.c: 90: _delay((unsigned long)((50)*(4000000/4000.0)));
 "90
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-[; ;jgatoraton1.c: 91: STATIC = aux2;
+[; ;jgatoraton1.c: 91: RATON = aux2;
 "91
-[e = _STATIC -> _aux2 `ui ]
+[e = _RATON -> _aux2 `ui ]
 [; ;jgatoraton1.c: 92: aux++;
 "92
 [e ++ _aux -> 1 `i ]

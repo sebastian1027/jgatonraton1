@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.43\dat\en_msgs.txt -cs \
   -h+dist/default/production\jgatoraton1.production.sym \
   --cmf=dist/default/production\jgatoraton1.production.cmf -z -Q16F887 \
-  -oC:\Users\sebas\AppData\Local\Temp\s51c.2 \
+  -oC:\Users\sebas\AppData\Local\Temp\s4ic.2 \
   -Mdist/default/production/jgatoraton1.production.map -E1 -ver=XC8 \
   -ASTACK=0110h-016fh -pstack=STACK -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh \
   -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 -AENTRY=00h-0FFhx32 \
@@ -18,7 +18,7 @@ Linker command line:
   -pfunctab=ENTRY -ACONFIG=02007h-02008h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\sebas\AppData\Local\Temp\s51c.obj \
+  -DENTRY=2 -k C:\Users\sebas\AppData\Local\Temp\s4ic.obj \
   dist/default/production\jgatoraton1.production.obj 
 
 Object code version is 3.11
@@ -28,7 +28,7 @@ Machine type is 16F887
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\sebas\AppData\Local\Temp\s51c.obj
+C:\Users\sebas\AppData\Local\Temp\s4ic.obj
                 end_init                             12       12        3        8       0
                 reset_vec                             0        0        3        0       0
                 config                             2007     2007        2     400E       0
@@ -252,13 +252,13 @@ UNUSED ADDRESS RANGES
 ?_rand                    cstackBANK0  002D
 _ANSEL                    (abs)        0188
 _ANSELH                   (abs)        0189
-_DINAMIC                  dataBANK1    00B2
+_GATO                     dataBANK1    00B2
 _INTCONbits               (abs)        000B
 _PORTBbits                (abs)        0006
 _PORTC                    (abs)        0007
 _PORTD                    (abs)        0008
 _PORTDbits                (abs)        0008
-_STATIC                   dataBANK1    00B4
+_RATON                    dataBANK1    00B4
 _TRISB                    (abs)        0086
 _TRISC                    (abs)        0087
 _TRISD                    (abs)        0088

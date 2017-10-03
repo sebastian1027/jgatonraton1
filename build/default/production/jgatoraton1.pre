@@ -2412,16 +2412,16 @@ extern double round(double);
 
 # 17 "jgatoraton1.c"
 int x = 0;
-unsigned int STATIC = 4;
-unsigned int DINAMIC = 1;
+unsigned int RATON = 4;
+unsigned int GATO = 1;
 
 void interrupt isr(){
 
 # 31
 if(INTCONbits.INTF == 1)
 {
-if(DINAMIC!=1)
-DINAMIC = DINAMIC/2;
+if(GATO!=1)
+GATO = GATO/2;
 x = 1;
 INTCONbits.INTF = 0;
 }
@@ -2429,8 +2429,8 @@ INTCONbits.INTF = 0;
 }
 
 void validar(){
-if(STATIC==DINAMIC){
-PORTC = STATIC;
+if(RATON==GATO){
+PORTC = RATON;
 PORTDbits.RD0 = 1;
 _delay((unsigned long)((3000)*(4000000/4000.0)));
 PORTDbits.RD0 = 0;
@@ -2439,14 +2439,14 @@ else if(PORTBbits.RB7 == 1)
 
 {
 do{}while(PORTBbits.RB7!=0);
-if(DINAMIC!=128)
-DINAMIC = DINAMIC*2;
+if(GATO!=128)
+GATO = GATO*2;
 
 
 }
 else
-PORTC = STATIC + DINAMIC;
-PORTC = STATIC + DINAMIC;
+PORTC = RATON + GATO;
+PORTC = RATON + GATO;
 
 }
 void main(void) {
@@ -2467,18 +2467,18 @@ int aux;
 int aux2=0;
 while (1){
 do
-{STATIC = rand()%7;
-STATIC = pow(2, STATIC);
-}while(STATIC == DINAMIC);
+{RATON = rand()%7;
+RATON = pow(2, RATON);
+}while(RATON == GATO);
 aux = 0;
 while(aux<5){
 validar();
 _delay((unsigned long)((50)*(4000000/4000.0)));
-aux2 = STATIC;
-STATIC = 0;
+aux2 = RATON;
+RATON = 0;
 validar();
 _delay((unsigned long)((50)*(4000000/4000.0)));
-STATIC = aux2;
+RATON = aux2;
 aux++;
 }
 }
