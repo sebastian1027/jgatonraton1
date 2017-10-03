@@ -118,18 +118,16 @@
 [v _errno errno `i  1 e 2 0 ]
 "3 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\rand.c
 [v _randx randx `l  1 s 4 randx ]
-"17 E:\DigitalesII\jgatoraton1\jgatoraton1.c
-[v _x x `i  1 e 2 0 ]
-"18
+"18 E:\DigitalesII\jgatoraton1\jgatoraton1.c
 [v _RATON RATON `ui  1 e 2 0 ]
 "19
 [v _GATO GATO `ui  1 e 2 0 ]
 "62
 [v _main main `(v  1 e 1 0 ]
 {
-"77
-[v main@aux2 aux2 `i  1 a 2 16 ]
 "76
+[v main@aux2 aux2 `i  1 a 2 16 ]
+"75
 [v main@aux aux `i  1 a 2 14 ]
 "95
 } 0

@@ -1712,13 +1712,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;math.h: 53: extern double fmod(double, double);
 [; ;math.h: 54: extern double trunc(double);
 [; ;math.h: 55: extern double round(double);
-"17 jgatoraton1.c
-[v _x `i ~T0 @X0 1 e ]
-[i _x
--> 0 `i
-]
-[; ;jgatoraton1.c: 17: int x = 0;
-"18
+"18 jgatoraton1.c
 [v _RATON `ui ~T0 @X0 1 e ]
 [i _RATON
 -> -> 4 `i `ui
@@ -1731,9 +1725,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 ]
 [; ;jgatoraton1.c: 19: unsigned int GATO = 1;
 [v $root$_isr `(v ~T0 @X0 0 e ]
-[v F1947 `(v ~T0 @X0 1 tf ]
+[v F1946 `(v ~T0 @X0 1 tf ]
 "21
-[v _isr `IF1947 ~T0 @X0 1 e ]
+[v _isr `IF1946 ~T0 @X0 1 e ]
 {
 [; ;jgatoraton1.c: 21: void interrupt isr(){
 [e :U _isr ]
@@ -1751,9 +1745,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 "34
 [e = _GATO / _GATO -> -> 2 `i `ui ]
 [e :U 146 ]
-[; ;jgatoraton1.c: 35: x = 1;
-"35
-[e = _x -> 1 `i ]
 [; ;jgatoraton1.c: 36: INTCONbits.INTF = 0;
 "36
 [e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
@@ -1865,15 +1856,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;jgatoraton1.c: 73: INTCONbits.INTE = 1;
 "73
 [e = . . _INTCONbits 0 4 -> -> 1 `i `uc ]
-"76
+"75
 [v _aux `i ~T0 @X0 1 a ]
-"77
+"76
 [v _aux2 `i ~T0 @X0 1 a ]
-[; ;jgatoraton1.c: 76: int aux;
-[; ;jgatoraton1.c: 77: int aux2=0;
+[; ;jgatoraton1.c: 75: int aux;
+[; ;jgatoraton1.c: 76: int aux2=0;
 [e = _aux2 -> 0 `i ]
-[; ;jgatoraton1.c: 78: while (1){
-"78
+[; ;jgatoraton1.c: 77: while (1){
+"77
 [e :U 158 ]
 {
 [; ;jgatoraton1.c: 79: do
@@ -1932,7 +1923,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "94
 }
 [e :U 157 ]
-"78
+"77
 [e $U 158  ]
 [e :U 159 ]
 [; ;jgatoraton1.c: 93: }

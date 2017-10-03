@@ -14,7 +14,7 @@
 #include <stdlib.h> //************ usar     //generación de números pseudo-aleatorios
 #include <math.h> //********* random        //Contiene las funciones matemáticas comunes.
 
-int x = 0;
+
 unsigned int RATON = 4; //luz encendida que representa al raton
 unsigned int GATO = 1;  //Luz encendidad durante un segundo que representa al gato
 
@@ -32,7 +32,7 @@ void interrupt isr(){  //funcion de interrupcion;
     {
         if(GATO!=1) //verifica que no haya desborade, es decir si llega al led LSB no pase y no genere error
            GATO = GATO/2;    //para la izquierda
-        x = 1;
+        
         INTCONbits.INTF = 0; //pone en 0 interrupcion, para despues volver a usar otra
     }      
         
@@ -55,13 +55,13 @@ void validar(){ //funcion validar
        // INTCONbits.RBIF = 0; //interrupcion
         } //HASTA AQUI
         else 
-            PORTC = RATON + GATO;   //de no atraparlo siga con el juego
-            PORTC = RATON + GATO;
+            PORTC = RATON + GATO;   //de no atraparlo siga con el juego //suma que no lleva acarreo
+            //PORTC = RATON + GATO;
         
 }
 void main(void) {
     TRISC = 0;  //puerto c como salidas
-    PORTC = 1; 
+    PORTC = 1; //empieza en la primera posicion
     TRISB = 0xFF;   //puerto B como entrada
     ANSEL = 0;      //desactiva entradas analogicas
     ANSELH = 0;
@@ -75,20 +75,21 @@ void main(void) {
     int aux;    //variables auxiliar
     int aux2=0; //variables auxiliar2
     while (1){
+        
         do
         {RATON = rand()%7; //hace que RATON sea aleatorio 
         RATON = pow(2, RATON); //PORTC como 2 a la potencia(random)
-        }while(RATON == GATO);
+        }while(RATON == GATO); //para que el raton nunca caiga en la posicion del gato
         aux = 0;
-        while(aux<5){   // hace que el led que representa al raton este con una luz intermitente
+        while(aux<5){   // hace que el led que representa al raton este con una luz intermitente, menor que 5 paraque halla 10 ocilaciones
             validar(); 
             __delay_ms(50);
             aux2 = RATON;
-            RATON = 0;
+            RATON = 0; //raton en 0 para que el led titile
             validar();
             __delay_ms(50);
             RATON = aux2;
-            aux++;
+            aux++; //aux para que el raton titile, el aux2 guarda la variable 
         }   
     }   
 }

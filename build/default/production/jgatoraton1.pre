@@ -2410,8 +2410,7 @@ extern double fmod(double, double);
 extern double trunc(double);
 extern double round(double);
 
-# 17 "jgatoraton1.c"
-int x = 0;
+# 18 "jgatoraton1.c"
 unsigned int RATON = 4;
 unsigned int GATO = 1;
 
@@ -2422,7 +2421,7 @@ if(INTCONbits.INTF == 1)
 {
 if(GATO!=1)
 GATO = GATO/2;
-x = 1;
+
 INTCONbits.INTF = 0;
 }
 
@@ -2462,10 +2461,10 @@ INTCONbits.GIE = 1;
 
 INTCONbits.INTE = 1;
 
-
 int aux;
 int aux2=0;
 while (1){
+
 do
 {RATON = rand()%7;
 RATON = pow(2, RATON);
