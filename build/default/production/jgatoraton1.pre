@@ -2419,6 +2419,7 @@ void interrupt isr(){
 # 31
 if(INTCONbits.INTF == 1)
 {
+_delay((unsigned long)((50)*(4000000/4000.0)));
 if(GATO!=1)
 GATO = GATO/2;
 
@@ -2436,7 +2437,7 @@ PORTDbits.RD0 = 0;
 }
 else if(PORTBbits.RB7 == 1)
 
-{
+{_delay((unsigned long)((50)*(4000000/4000.0)));
 do{}while(PORTBbits.RB7!=0);
 if(GATO!=128)
 GATO = GATO*2;
@@ -2445,7 +2446,7 @@ GATO = GATO*2;
 }
 else
 PORTC = RATON + GATO;
-PORTC = RATON + GATO;
+
 
 }
 void main(void) {

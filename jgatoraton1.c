@@ -30,6 +30,7 @@ void interrupt isr(){  //funcion de interrupcion;
              */
      if(INTCONbits.INTF == 1) //habilita la interrupcion 
     {
+         __delay_ms(50);
         if(GATO!=1) //verifica que no haya desborade, es decir si llega al led LSB no pase y no genere error
            GATO = GATO/2;    //para la izquierda
         
@@ -47,8 +48,8 @@ void validar(){ //funcion validar
         }
         else if(PORTBbits.RB7 == 1)//QUIRAR DESDE AQUI
             
-        {
-         do{}while(PORTBbits.RB7!=0); //verifica si fue presionado el pin 7 del puerto B
+        {__delay_ms(50);
+         do{}while(PORTBbits.RB7!=0); //verifica si fue presionado el pin 7 del puerto B         
          if(GATO!=128) //verifica que no haya desborade, es decir si llega al led MSB no pase y no genere error
             GATO = GATO*2;
          

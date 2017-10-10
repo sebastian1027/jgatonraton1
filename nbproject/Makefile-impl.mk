@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=jgatoraton1
+PROJECTNAME=jgatonraton1
 
 # Active Configuration
 DEFAULTCONF=default
